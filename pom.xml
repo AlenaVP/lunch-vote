@@ -22,6 +22,8 @@
         <spring-data-jpa.version>2.4.0</spring-data-jpa.version>
         <spring.security.version>5.4.1</spring.security.version>
 
+        <tomcat.version>9.0.39</tomcat.version>
+
         <jackson-json.version>2.11.3</jackson-json.version>
 
         <!-- Hibernate -->
@@ -125,6 +127,19 @@
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>${jackson-json.version}</version>
+        </dependency>
+
+        <!--Web-->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>${tomcat.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 
